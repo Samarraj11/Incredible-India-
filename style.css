@@ -1,0 +1,272 @@
+*{
+    margin: 0;  padding: 0; box-sizing: border-box;
+}
+header{
+    width: 100%; height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('india.gate.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%; height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white; display: flex;  justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+nav .logo{
+    width: 25%; text-align: center;
+}
+
+nav .menu{
+    width: 50%;
+    display: flex;justify-content: space-around;
+    transition: 0.6s ease;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none; color: white;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color: white;
+}
+section{
+    content: '';
+
+}
+
+section h3{
+    font-size: 35px; font-weight: 200; letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 10px 0 10px 0;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover{
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo{
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover{
+    background: #ffffff;
+    color: #000; 
+}
+
+.change_content::after{
+    content: '';
+    margin: 0 7px 0 7px;
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{ content: "delhi"; }
+    20%{ content: "jaipur"; }
+    35%{ content: "varanasi"; }
+    60%{  content: "kerala"; }
+    80%{ content: "mumbai"; }
+    100%{ content: "assam"; }
+
+}
+
+.destination{
+    font-size: 2.0rem;
+    font-family: "Dongle-bold";
+    margin-bottom: 40px;
+    margin: 40px 80px;
+    text-align: center;
+}
+.destination h2{
+    margin-bottom: 30px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+}
+.destination-item h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.destination-item p{
+    font-size: 1.3rem;
+    line-height: 1;
+    font-family: "Dongle-regular";
+}
+
+.services{
+    text-align: center;
+}
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services .box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: #00b894;
+}
+
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #00b894;
+    padding: 1rem 0;
+}
+
+.services .box-container .box:hover{
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 1);
+}
+ 
+.contact{
+    text-align: center;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact .row .contact-info .box{
+    margin: 3rem 2rem;
+}
+
+.contact .row .contact-info .box h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact .row .contact-info .box h3 i{
+    color: #000;
+}
+
+.contact .row .contact-info .box p{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.contact .row .contact-form-container{
+    width: 40%;
+}
+
+.contact .row .contact-form-container h3{
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: #333;
+}
+
+.contact .row .contact-form-container .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .row .contact-form-container .inputBox input{
+    width: 49%;
+}
+
+.contact .row .contact-form-container form input, textarea{
+    outline: none;
+    border: .1rem solid #000;
+    height: 3rem;
+    background: #fff;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.contact .row  .contact-form-container form textarea{
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+    height: 20%;
+}
+
+.contact .row .contact-form-container form input[type="submit"]{
+    color: #000;
+    border: 2rem  #000;
+    cursor: pointer;
+    transition: .2s;
+    width: 7rem;
+}
+
+.contact .row .contact-form-container form input[type="submit"]:hover{
+    color: #fff;
+    background: #000;
+}
+
+footer{
+    background: #00b894;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.copyright{
+    color: var(#fff);
+} 
